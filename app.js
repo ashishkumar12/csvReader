@@ -23,6 +23,7 @@ app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
+console.log(process.env.NODE_ENV);
 app.use('/',home);
 app.use('/public',express.static(path.join(__dirname, 'public')));
 app.use('/build',express.static(path.join(__dirname, 'build')));
