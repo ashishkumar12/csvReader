@@ -61,7 +61,7 @@ var _ = (function(){
           type: 'doughnut',
           data: data,
           options: {
-            responsive : true
+            // responsive : true
           }
         });
       },
