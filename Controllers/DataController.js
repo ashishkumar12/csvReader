@@ -47,6 +47,7 @@ module.exports = {
         cb(null,obj);
       }
     },function(err,results){
+      console.log("async ", err, results.length);
       callback(results);
     });
   }
