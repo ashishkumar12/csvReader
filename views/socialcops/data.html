@@ -1,0 +1,31 @@
+{% set totalrun_conceded = 0 %}
+{% set totalbattingruns = 0 %}
+{% set run_conceded = 0 %}
+{% set batting_runs = 0 %}
+{% for match in data %}
+{% set run_conceded = match.runs_conceded | int %}
+{% set totalrun_conceded = totalrun_conceded + run_conceded %}
+{% set batting_runs = match.batting_score | int %}
+{% set totalbattingruns = totalbattingruns + batting_runs %}
+{% endfor %}
+{% block jscontent %}
+  <script type="text/javascript">
+    var yearlyScore = {{ yearlyScore|dump|safe }};
+    var scoreAgainstTeam = {{ scoreAgainstTeam|dump|safe }};
+    var chance_to  = {{ winORloose|dump|safe }};
+  </script>
+{% endblock %}
+<div class="container">
+  <div class="wrapper">
+    <h1>Wikipedia says, “Sachin Tendulkar is a former Indian cricketer, widely regarded to be the greatest cricketer of all time.”</h1>
+    <p>
+      He had played <strong>{{ data|length }}</strong> matches in his International Cricket career and scored outstanding<strong>{{ totalbattingruns }}</strong> runs.
+    </p>
+    <h3>1. Here is the graph which shows that he had made outstanding scores against some of the best teams in International Cricket(Australia,Sri Lanka,etc)</h3>
+    <canvas id="myChart" width="400" height="150"></canvas>
+    <h3>2. Sachin Tendulkar's yealy score of his International Cricket career.</h3>
+    <canvas id="myChart2" width="400" height="150"></canvas>
+    <h3>3. Winning count is greater than the lost count in the matches Sachin has played.</h3>
+    <canvas id="myChart3" width="400" height="100"></canvas>
+  </div>
+</div>

@@ -1,0 +1,227 @@
+body {
+  font-family: 'Open Sans',sans-serif; }
+
+.primary-nav {
+  height: 40px;
+  min-height: 40px;
+  background: #0a242b;
+  border-radius: 0px;
+  border: 0px;
+  margin-bottom: 0px; }
+  .primary-nav .dynamic-tabs {
+    margin-left: 16em; }
+    .primary-nav .dynamic-tabs li a {
+      float: left;
+      height: 40px;
+      line-height: 40px;
+      text-align: center;
+      text-decoration: none;
+      font-size: 0.8em;
+      background: #06191e;
+      border-left: solid 1px #1d4049;
+      padding: 0 15px;
+      font-weight: 600;
+      color: #ccc; }
+      .primary-nav .dynamic-tabs li a:hover {
+        background-color: #0f323c;
+        color: #fff !important; }
+    .primary-nav .dynamic-tabs li:last-child a {
+      border-right: solid 1px #1d4049; }
+    .primary-nav .dynamic-tabs li.active a {
+      background-color: #fff;
+      color: #0095d9;
+      border-left: 0; }
+      .primary-nav .dynamic-tabs li.active a:hover {
+        background-color: #fff;
+        color: #0095d9 !important;
+        border-left: 0; }
+  .primary-nav .static-tabs li a {
+    float: left;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 0.8em;
+    padding: 0 15px;
+    font-weight: 600;
+    color: #ccc; }
+    .primary-nav .static-tabs li a:hover {
+      background-color: #0f323c;
+      color: #fff !important; }
+  .primary-nav .static-tabs li.active a {
+    background-color: #fff;
+    background: #fff;
+    color: #0095d9;
+    border-left: 0; }
+  .primary-nav .socialnav {
+    margin-right: 6em; }
+    .primary-nav .socialnav li a {
+      float: left;
+      height: 40px;
+      line-height: 40px;
+      text-align: center;
+      text-decoration: none;
+      font-size: 0.8em;
+      padding: 0 15px;
+      font-weight: 600;
+      color: #ccc; }
+      .primary-nav .socialnav li a i {
+        font-size: 15px; }
+      .primary-nav .socialnav li a:hover {
+        background-color: #0f323c;
+        color: #fff !important; }
+        .primary-nav .socialnav li a:hover i {
+          color: #fff; }
+    .primary-nav .socialnav li:first-child a {
+      border-right: solid 1px #1d4049;
+      border-left: solid 1px #1d4049;
+      padding: 0 34px; }
+
+.secondary-nav {
+  min-height: 60px;
+  height: 60px;
+  background-color: #fff;
+  border: 0px;
+  margin-bottom: 0px; }
+  .secondary-nav .navbar-brand {
+    margin-left: 4.6em !important; }
+  .secondary-nav .navbar-nav li a {
+    line-height: 60px;
+    color: #333 !important;
+    border-right: solid 1px #e5e5e5;
+    text-align: center;
+    height: 60px;
+    padding: 0 21px;
+    font-weight: 600;
+    font-size: 13px; }
+    .secondary-nav .navbar-nav li a span {
+      display: inline-block;
+      background: #e0e0e0;
+      height: 30px;
+      line-height: 30px;
+      padding: 0px 15px; }
+    .secondary-nav .navbar-nav li a:hover {
+      background-color: #0095d9;
+      color: #fff !important; }
+  .secondary-nav .navbar-nav li:first-child a {
+    border-left: solid 1px #e5e5e5; }
+  .secondary-nav .navbar-nav .search {
+    padding: 13px 14px;
+    width: 231px;
+    border-right: solid 1px #e5e5e5; }
+    .secondary-nav .navbar-nav .search .search-container {
+      position: relative;
+      height: 38px; }
+      .secondary-nav .navbar-nav .search .search-container span {
+        position: absolute;
+        top: 7px;
+        left: 9px;
+        color: #6f6f6f; }
+      .secondary-nav .navbar-nav .search .search-container input {
+        border: 1px solid #cbcbcb;
+        border-radius: 0px;
+        box-shadow: none;
+        padding-left: 30px; }
+
+.sbi-breadcrumb {
+  height: 30px;
+  background: rgba(10, 36, 43, 0.8);
+  position: relative;
+  z-index: 1;
+  padding: 0em 12.8em; }
+  .sbi-breadcrumb a {
+    display: inline-block;
+    line-height: 30px;
+    font-size: 12px;
+    color: #0095d9; }
+  .sbi-breadcrumb span {
+    display: inline-block;
+    line-height: 30px;
+    font-size: 12px;
+    color: #fff; }
+
+#myCarousel {
+  margin-top: -30px; }
+  #myCarousel .carousel-inner .item {
+    height: 380px;
+    overflow: hidden;
+    width: 100%; }
+    #myCarousel .carousel-inner .item img {
+      width: 100%;
+      height: 380px;
+      object-fit: cover;
+      object-position: center; }
+
+.login-block {
+  position: absolute;
+  width: 231px;
+  height: auto;
+  right: 191px;
+  top: 100px;
+  z-index: 1;
+  border-top: 1px solid #e5e5e5; }
+  .login-block a:hover {
+    text-decoration: none; }
+  .login-block .level-1 {
+    background-color: #fff;
+    padding: 8px; }
+    .login-block .level-1 .login-btn {
+      display: block;
+      background: #0095d9;
+      color: #fff;
+      border-radius: 0px;
+      font-size: 13px; }
+    .login-block .level-1 .forgot-link {
+      color: #0095d9;
+      font-size: 11px;
+      font-weight: 600; }
+    .login-block .level-1 p {
+      font-weight: 700;
+      font-size: 11px;
+      margin-top: 6px;
+      margin-bottom: 2px; }
+    .login-block .level-1 span {
+      margin: 0 0 3px;
+      font-size: 10px;
+      color: #666;
+      font-weight: 400;
+      display: block; }
+      .login-block .level-1 span a {
+        color: #0095d9;
+        font-weight: 600; }
+    .login-block .level-1 .watchdemo {
+      color: #666;
+      font-size: 11px;
+      display: inline-block;
+      position: relative;
+      vertical-align: middle; }
+      .login-block .level-1 .watchdemo i {
+        font-size: 17px;
+        vertical-align: bottom; }
+  .login-block .level-2 {
+    background: rgba(10, 36, 43, 0.8); }
+    .login-block .level-2 ul {
+      padding-left: 0px;
+      list-style: none; }
+      .login-block .level-2 ul li {
+        height: 40px; }
+        .login-block .level-2 ul li a {
+          height: 39px;
+          line-height: 39px;
+          padding: 0px 16px 0px 40px;
+          border-bottom: 1px solid #26515e;
+          display: block;
+          color: #fff;
+          position: relative;
+          font-size: 13px; }
+          .login-block .level-2 ul li a i {
+            position: absolute;
+            left: 13px;
+            top: 13px; }
+          .login-block .level-2 ul li a:hover {
+            background-color: #0095d9;
+            color: #fff; }
+        .login-block .level-2 ul li:last-child a {
+          border-bottom: none; }
+
+/*# sourceMappingURL=index.css.map */
